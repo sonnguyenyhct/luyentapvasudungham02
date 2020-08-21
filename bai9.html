@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 9</title>
+</head>
+<body>
+<script>
+    let numbers = [];
+    let numArray = parseInt(prompt("Nhập vào số lượng phần tử"));
+    let char = prompt("Nhập vào ký tự cần tìm");
+    for (let count = 0; count < numArray; count++){
+        let inputArray = prompt("Nhập vào ký tự");
+        numbers.push(inputArray);
+    }
+    function checkChar(arrayChar, char) {
+        let num = 0
+        for (let count = 0; count < arrayChar.length; count++){
+            if (char === arrayChar[count]){
+                num += 1;
+            }
+        }
+        if (num === 0){
+            return -1;
+        }else {
+            return num;
+        }
+    }
+    alert(checkChar(numbers,char));
+
+
+</script>
+</body>
+</html>

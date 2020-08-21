@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 8</title>
+</head>
+<body>
+<script>
+    function reverseArray(numbers) {
+        for (let count = 0; count < numbers.length/2; count++){
+            let change = numbers[count];
+            numbers[count] = numbers[numbers.length - count - 1];
+            numbers[numbers.length - count - 1] = change;
+        }
+        return numbers;
+    }
+    let numbers = [];
+    let numArray = parseInt(prompt("Nhập vào số lượng phần tử"));
+
+    for (let count = 0; count < numArray; count++){
+        let inputArray = parseInt(prompt("Nhập vào số nguyên"));
+        numbers.push(inputArray);
+    }
+    alert(reverseArray(numbers));
+</script>
+</body>
+</html>

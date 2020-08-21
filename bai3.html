@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 3</title>
+</head>
+<body>
+    <script>
+        function factorial(num) {
+            if (num <= 0){
+                return "Hãy nhập số nguyên dương";
+            }else if (num === 1){
+                return 1;
+            }else if (num > 1){
+                return factorial(num - 1)*num;
+            }
+        }
+        let inputNum = parseInt(prompt("Nhập vào số cần tính giai thừa"));
+        alert(factorial(inputNum));
+    </script>
+</body>
+</html>

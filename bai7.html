@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 7</title>
+</head>
+<body>
+    <script>
+        let numbers = [];
+        let num1 = parseInt(prompt("Nhập vào số nguyên : "));
+        let num2 = parseInt(prompt("Nhập vào số nguyên : "));
+        numbers[0] = num1;
+        numbers[1] = num2;
+        function swap(arrayNumber) {
+            let flag = 0;
+             flag = arrayNumber[0];
+            arrayNumber[0] = arrayNumber[1];
+            arrayNumber[1] = flag;
+            return arrayNumber;
+        }
+        alert(swap(numbers));
+    </script>
+</body>
+</html>
